@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - DigiMarkPro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4e42d4',
+                        secondary: '#ff6b6b',
+                        dark: '#2d2d2d',
+                        light: '#f9f9f9',
+                        gray: '#7c7c7c'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-[Poppins] text-gray-800 bg-gray-50">
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="text-2xl font-bold text-primary">DigiMarkPro</a>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-dark font-medium hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="services.html" class="text-primary font-medium hover:text-secondary transition-colors">Services</a></li>
+                    <li><a href="portfolio.html" class="text-dark font-medium hover:text-primary transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-dark font-medium hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden menu-toggle cursor-pointer">
+                <i class="fas fa-bars text-2xl text-primary"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 left-0 w-full h-0 bg-white overflow-hidden transition-all duration-300 z-40">
+        <div class="container mx-auto px-4 py-20">
+            <ul class="flex flex-col space-y-6 text-center">
+                <li><a href="index.html" class="text-xl font-medium text-dark hover:text-primary transition-colors">Home</a></li>
+                <li><a href="services.html" class="text-xl font-medium text-primary">Services</a></li>
+                <li><a href="portfolio.html" class="text-xl font-medium text-dark hover:text-primary transition-colors">Portfolio</a></li>
+                <li><a href="contact.html" class="text-xl font-medium text-dark hover:text-primary transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner pt-32 pb-20 bg-gradient-to-r from-indigo-500/10 to-primary/10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-dark">Our Services</h1>
+            <p class="text-lg text-gray max-w-2xl mx-auto">Comprehensive digital solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="services-intro py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-dark">How We Can Help Your Business</h2>
+                <p class="text-gray">At DigiMarkPro, we offer a comprehensive suite of digital marketing and technology services designed to help your business thrive in the digital landscape. Our team of experts combines industry knowledge with cutting-edge techniques to deliver results-driven solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Service -->
+    <section id="seo" class="service-detail py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/seo-icon.svg" alt="SEO Optimization" class="w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="service-content">
+                        <h2 class="text-3xl font-bold mb-6 text-dark">SEO Optimization</h2>
+                        <p class="text-gray mb-6">Our SEO services are designed to improve your website's visibility in search engine results, driving more organic traffic and increasing your online presence.</p>
+                        <div class="service-features space-y-4">
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Keyword Research & Strategy</h3>
+                                    <p class="text-gray">We identify the most relevant and high-performing keywords for your business to target.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">On-Page SEO Optimization</h3>
+                                    <p class="text-gray">We optimize your website's content, meta tags, and structure to improve search engine rankings.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Technical SEO Audit</h3>
+                                    <p class="text-gray">We identify and fix technical issues that may be affecting your website's performance in search results.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Link Building</h3>
+                                    <p class="text-gray">We develop strategies to acquire high-quality backlinks that boost your website's authority.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cta mt-8">
+                            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing -->
+    <section id="marketing" class="service-detail py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/marketing-icon.svg" alt="Digital Marketing" class="w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pr-12">
+                    <div class="service-content">
+                        <h2 class="text-3xl font-bold mb-6 text-dark">Digital Marketing</h2>
+                        <p class="text-gray mb-6">Our comprehensive digital marketing strategies help you reach your target audience, build brand awareness, and drive conversions across multiple channels.</p>
+                        <div class="service-features space-y-4">
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Pay-Per-Click (PPC) Advertising</h3>
+                                    <p class="text-gray">We create and manage targeted ad campaigns on Google, Bing, and other platforms to drive immediate traffic.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Email Marketing</h3>
+                                    <p class="text-gray">We design and implement email campaigns that nurture leads, engage customers, and drive conversions.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Content Marketing</h3>
+                                    <p class="text-gray">We create valuable, relevant content that attracts and engages your target audience while establishing your authority.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Display & Retargeting</h3>
+                                    <p class="text-gray">We implement display advertising and retargeting campaigns to keep your brand in front of potential customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cta mt-8">
+                            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Automation -->
+    <section id="automation" class="service-detail py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/marketing-automation.svg" alt="Marketing Automation" class="w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="service-content">
+                        <h2 class="text-3xl font-bold mb-6 text-dark">Marketing Automation</h2>
+                        <p class="text-gray mb-6">Our marketing automation solutions help you streamline your marketing processes, improve efficiency, and deliver personalized experiences to your customers.</p>
+                        <div class="service-features space-y-4">
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Automated Email Sequences</h3>
+                                    <p class="text-gray">We set up triggered email sequences that nurture leads through the sales funnel based on their actions.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Lead Scoring & Management</h3>
+                                    <p class="text-gray">We implement systems to score and prioritize leads based on their engagement and readiness to purchase.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Customer Journey Mapping</h3>
+                                    <p class="text-gray">We design automated workflows that guide customers through personalized journeys based on their behavior.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">CRM Integration</h3>
+                                    <p class="text-gray">We integrate your marketing automation with your CRM to ensure seamless data flow between marketing and sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cta mt-8">
+                            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agents -->
+    <section id="ai" class="service-detail py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/ai-agent.svg" alt="AI Agents" class="w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pr-12">
+                    <div class="service-content">
+                        <h2 class="text-3xl font-bold mb-6 text-dark">AI Agents</h2>
+                        <p class="text-gray mb-6">Our AI-powered solutions help you automate tasks, enhance customer experiences, and gain valuable insights from your data.</p>
+                        <div class="service-features space-y-4">
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Chatbots & Virtual Assistants</h3>
+                                    <p class="text-gray">We develop intelligent chatbots that provide instant customer support and guide users through your website.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Predictive Analytics</h3>
+                                    <p class="text-gray">We implement AI algorithms that analyze data to predict customer behavior and optimize marketing strategies.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Content Generation</h3>
+                                    <p class="text-gray">We utilize AI tools to assist in creating engaging content for your marketing campaigns.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Personalization Engines</h3>
+                                    <p class="text-gray">We implement AI-driven personalization to deliver tailored content and recommendations to your audience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cta mt-8">
+                            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development -->
+    <section id="website" class="service-detail py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/website-development.svg" alt="Website Development" class="w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="service-content">
+                        <h2 class="text-3xl font-bold mb-6 text-dark">Website Development</h2>
+                        <p class="text-gray mb-6">Our website development services focus on creating stunning, responsive, and user-friendly websites that convert visitors into customers.</p>
+                        <div class="service-features space-y-4">
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Custom Website Design</h3>
+                                    <p class="text-gray">We create unique, branded website designs that reflect your company's identity and appeal to your target audience.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Responsive Development</h3>
+                                    <p class="text-gray">We build websites that look and function perfectly on all devices, from desktops to smartphones.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">E-Commerce Solutions</h3>
+                                    <p class="text-gray">We develop secure, user-friendly online stores that make it easy for customers to browse and purchase your products.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">CMS Implementation</h3>
+                                    <p class="text-gray">We integrate content management systems that make it easy for you to update and manage your website.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cta mt-8">
+                            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Management -->
+    <section id="social" class="service-detail py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/social-media.svg" alt="Social Media Management" class="w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pr-12">
+                    <div class="service-content">
+                        <h2 class="text-3xl font-bold mb-6 text-dark">Social Media Management</h2>
+                        <p class="text-gray mb-6">Our social media management services help you build and maintain a strong presence across various social platforms to engage with your audience and grow your brand.</p>
+                        <div class="service-features space-y-4">
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Social Media Strategy</h3>
+                                    <p class="text-gray">We develop comprehensive strategies tailored to your business goals and target audience.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Content Creation & Curation</h3>
+                                    <p class="text-gray">We create engaging content that resonates with your audience and reflects your brand voice.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Community Management</h3>
+                                    <p class="text-gray">We actively engage with your audience, respond to comments, and build a loyal community around your brand.</p>
+                                </div>
+                            </div>
+                            <div class="feature flex items-start">
+                                <div class="feature-icon mr-4 text-primary">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="text-lg font-semibold mb-2 text-dark">Social Media Advertising</h3>
+                                    <p class="text-gray">We create and manage targeted ad campaigns to increase reach, engagement, and conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-cta mt-8">
+                            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Grow Your Business?</h2>
+            <p class="text-indigo-100 max-w-2xl mx-auto mb-8">Contact us today to discuss how our digital marketing services can help you achieve your business goals.</p>
+            <a href="contact.html" class="bg-white hover:bg-gray-100 text-primary py-3 px-8 rounded-full font-medium inline-block transition-all">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="footer-about">
+                    <h3 class="text-xl font-bold mb-6">DigiMarkPro</h3>
+                    <p class="text-gray-400 mb-6">We are a full-service digital marketing agency dedicated to helping businesses grow and succeed in the digital landscape.</p>
+                    <div class="social-icons flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-white transition-colors">SEO Optimization</a></li>
+                        <li><a href="services.html#marketing" class="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="services.html#automation" class="text-gray-400 hover:text-white transition-colors">Marketing Automation</a></li>
+                        <li><a href="services.html#ai" class="text-gray-400 hover:text-white transition-colors">AI Agents</a></li>
+                        <li><a href="services.html#website" class="text-gray-400 hover:text-white transition-colors">Website Development</a></li>
+                        <li><a href="services.html#social" class="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-secondary"></i>
+                            <span class="text-gray-400">123 Digital Avenue, Tech City</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3 text-secondary"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-secondary"></i>
+                            <span class="text-gray-400">info@digimarkpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom pt-8 mt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-center">&copy; 2023 DigiMarkPro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

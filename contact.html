@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DigiMarkPro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4e42d4',
+                        secondary: '#ff6b6b',
+                        dark: '#2d2d2d',
+                        light: '#f9f9f9',
+                        gray: '#7c7c7c'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-[Poppins] text-gray-800 bg-gray-50">
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="text-2xl font-bold text-primary">DigiMarkPro</a>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-dark font-medium hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="services.html" class="text-dark font-medium hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="portfolio.html" class="text-dark font-medium hover:text-primary transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-primary font-medium hover:text-secondary transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden menu-toggle cursor-pointer">
+                <i class="fas fa-bars text-2xl text-primary"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 left-0 w-full h-0 bg-white overflow-hidden transition-all duration-300 z-40">
+        <div class="container mx-auto px-4 py-20">
+            <ul class="flex flex-col space-y-6 text-center">
+                <li><a href="index.html" class="text-xl font-medium text-dark hover:text-primary transition-colors">Home</a></li>
+                <li><a href="services.html" class="text-xl font-medium text-dark hover:text-primary transition-colors">Services</a></li>
+                <li><a href="portfolio.html" class="text-xl font-medium text-dark hover:text-primary transition-colors">Portfolio</a></li>
+                <li><a href="contact.html" class="text-xl font-medium text-primary">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Banner -->
+    <section class="page-banner pt-32 pb-20 bg-gradient-to-r from-indigo-500/10 to-primary/10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-dark">Contact Us</h1>
+            <p class="text-lg text-gray max-w-2xl mx-auto">Get in touch with our team to discuss your digital marketing needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="contact-card bg-light rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-all">
+                    <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-dark">Our Location</h3>
+                    <p class="text-gray">123 Digital Avenue<br>Tech City, TC 12345<br>United States</p>
+                </div>
+                <div class="contact-card bg-light rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-all">
+                    <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-dark">Phone Number</h3>
+                    <p class="text-gray">+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                </div>
+                <div class="contact-card bg-light rounded-lg p-8 text-center shadow-lg hover:shadow-xl transition-all">
+                    <div class="icon-box w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-dark">Email Address</h3>
+                    <p class="text-gray">info@digimarkpro.com<br>support@digimarkpro.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-map py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="contact-form bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-6 text-dark">Send Us a Message</h2>
+                    <p class="text-gray mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label for="name" class="block text-dark font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="block text-dark font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="block text-dark font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="block text-dark font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="How can we help you?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="block text-dark font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="w-5 h-5 text-primary border-gray-300 rounded focus:ring-primary" required>
+                                <span class="ml-3 text-gray">I agree to the <a href="#" class="text-primary hover:underline">Privacy Policy</a> and <a href="#" class="text-primary hover:underline">Terms of Service</a>.</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium transition-all w-full md:w-auto">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-container rounded-lg overflow-hidden shadow-lg">
+                    <h2 class="text-3xl font-bold mb-6 text-dark">Our Location</h2>
+                    <div class="map-wrapper h-[450px] bg-gray-200 rounded-lg relative">
+                        <!-- Replace with actual Google Maps embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596552044!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1659587930844!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-dark">Frequently Asked Questions</h2>
+                <p class="text-gray max-w-2xl mx-auto">Find answers to common questions about our services and processes</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="faq-accordion space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-light rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold text-dark hover:text-primary transition-colors">
+                            <span>What services does DigiMarkPro offer?</span>
+                            <i class="fas fa-plus text-primary transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray">DigiMarkPro offers a comprehensive range of digital marketing services including SEO optimization, digital marketing campaigns, marketing automation, AI solutions, website development, and social media management. We tailor our services to meet the specific needs and goals of each client.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-light rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold text-dark hover:text-primary transition-colors">
+                            <span>How long does it take to see results from SEO?</span>
+                            <i class="fas fa-plus text-primary transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray">SEO is a long-term strategy that typically takes 3-6 months to start showing significant results. However, this timeline can vary based on factors such as your industry competition, current website condition, and the aggressiveness of your SEO strategy. We provide regular progress reports so you can track improvements over time.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-light rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold text-dark hover:text-primary transition-colors">
+                            <span>How much does a digital marketing campaign cost?</span>
+                            <i class="fas fa-plus text-primary transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray">The cost of a digital marketing campaign varies depending on your business goals, target audience, competition, and the specific services required. We offer customized packages tailored to your needs and budget. Contact us for a free consultation and quote based on your specific requirements.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item bg-light rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold text-dark hover:text-primary transition-colors">
+                            <span>Do you offer website maintenance services?</span>
+                            <i class="fas fa-plus text-primary transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray">Yes, we offer website maintenance services to ensure your website remains secure, up-to-date, and performing optimally. Our maintenance packages include regular updates, security monitoring, performance optimization, content updates, and technical support. We can customize a maintenance plan based on your specific needs.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item bg-light rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold text-dark hover:text-primary transition-colors">
+                            <span>How do you measure the success of marketing campaigns?</span>
+                            <i class="fas fa-plus text-primary transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray">We measure the success of marketing campaigns through various metrics and KPIs aligned with your business goals. These may include website traffic, conversion rates, lead generation, engagement metrics, ROI, and more. We provide detailed reports and analytics dashboards to track performance and make data-driven decisions for continuous improvement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Boost Your Digital Presence?</h2>
+            <p class="text-indigo-100 max-w-2xl mx-auto mb-8">Partner with us to transform your digital marketing strategy and achieve exceptional results.</p>
+            <a href="#contactForm" class="bg-white hover:bg-gray-100 text-primary py-3 px-8 rounded-full font-medium inline-block transition-all">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="footer-about">
+                    <h3 class="text-xl font-bold mb-6">DigiMarkPro</h3>
+                    <p class="text-gray-400 mb-6">We are a full-service digital marketing agency dedicated to helping businesses grow and succeed in the digital landscape.</p>
+                    <div class="social-icons flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-white transition-colors">SEO Optimization</a></li>
+                        <li><a href="services.html#marketing" class="text-gray-400 hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="services.html#automation" class="text-gray-400 hover:text-white transition-colors">Marketing Automation</a></li>
+                        <li><a href="services.html#ai" class="text-gray-400 hover:text-white transition-colors">AI Agents</a></li>
+                        <li><a href="services.html#website" class="text-gray-400 hover:text-white transition-colors">Website Development</a></li>
+                        <li><a href="services.html#social" class="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-secondary"></i>
+                            <span class="text-gray-400">123 Digital Avenue, Tech City</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3 text-secondary"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-secondary"></i>
+                            <span class="text-gray-400">info@digimarkpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom pt-8 mt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-center">&copy; 2023 DigiMarkPro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
