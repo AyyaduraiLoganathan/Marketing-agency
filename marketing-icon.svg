@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#fff0f0" />
+  
+  <!-- Megaphone/Bullhorn -->
+  <path d="M40,100 L40,120 L60,130 L60,90 L40,100" fill="#ff6b6b" />
+  <path d="M60,90 L60,130 L75,130 L75,90 L60,90" fill="#ff6b6b" opacity="0.8" />
+  <path d="M75,90 L75,130 L85,125 L85,95 L75,90" fill="#ff6b6b" opacity="0.6" />
+  
+  <!-- Sound Waves -->
+  <path d="M85,95 Q110,70 135,95" fill="none" stroke="#4e42d4" stroke-width="4" stroke-linecap="round" />
+  <path d="M85,110 Q110,135 135,110" fill="none" stroke="#4e42d4" stroke-width="4" stroke-linecap="round" />
+  <path d="M85,95 Q110,110 85,125" fill="none" stroke="#4e42d4" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Target Audience -->
+  <circle cx="150" cy="80" r="20" fill="none" stroke="#4e42d4" stroke-width="3" />
+  <circle cx="150" cy="80" r="10" fill="none" stroke="#4e42d4" stroke-width="2" />
+  <circle cx="150" cy="80" r="3" fill="#4e42d4" />
+  
+  <!-- Digital Elements -->
+  <rect x="130" y="120" width="40" height="25" rx="3" fill="#4e42d4" opacity="0.2" />
+  <rect x="135" y="125" width="30" height="15" rx="2" fill="white" />
+  <line x1="140" y1="132" x2="160" y2="132" stroke="#4e42d4" stroke-width="2" />
+  <line x1="140" y1="137" x2="150" y2="137" stroke="#4e42d4" stroke-width="2" />
+  
+  <!-- Social Media Icons -->
+  <circle cx="40" cy="50" r="10" fill="#4e42d4" opacity="0.3" />
+  <text x="40" y="53" font-family="Arial" font-size="8" text-anchor="middle" fill="#4e42d4">f</text>
+  
+  <circle cx="65" cy="50" r="10" fill="#ff6b6b" opacity="0.3" />
+  <text x="65" y="53" font-family="Arial" font-size="8" text-anchor="middle" fill="#ff6b6b">in</text>
+  
+  <circle cx="90" cy="50" r="10" fill="#4e42d4" opacity="0.3" />
+  <text x="90" y="53" font-family="Arial" font-size="8" text-anchor="middle" fill="#4e42d4">t</text>
+  
+  <!-- Growth Chart -->
+  <polyline points="30,160 45,150 60,155 75,140 90,135 105,125" fill="none" stroke="#ff6b6b" stroke-width="3" />
+  <circle cx="105" cy="125" r="4" fill="#ff6b6b" />
+</svg>
