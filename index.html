@@ -1,13 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiMarkPro - Digital Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4e42d4',
+                        secondary: '#ff6b6b',
+                        dark: '#2d2d2d',
+                        light: '#f9f9f9',
+                        gray: '#7c7c7c'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-[Poppins] text-gray-800 bg-gray-50">
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="text-2xl font-bold text-primary">DigiMarkPro</a>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-primary font-medium hover:text-secondary transition-colors">Home</a></li>
+                    <li><a href="services.html" class="text-dark font-medium hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="portfolio.html" class="text-dark font-medium hover:text-primary transition-colors">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-dark font-medium hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="#" class="text-dark font-medium hover:text-primary transition-colors">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden menu-toggle cursor-pointer">
+                <i class="fas fa-bars text-2xl text-primary"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 left-0 w-full h-0 bg-white overflow-hidden transition-all duration-300 z-40">
+        <div class="container mx-auto px-4 py-20">
+            <ul class="flex flex-col space-y-6 text-center">
+                <li><a href="index.html" class="text-primary text-xl font-medium hover:text-secondary transition-colors">Home</a></li>
+                <li><a href="services.html" class="text-dark text-xl font-medium hover:text-primary transition-colors">Services</a></li>
+                <li><a href="portfolio.html" class="text-dark text-xl font-medium hover:text-primary transition-colors">Portfolio</a></li>
+                <li><a href="contact.html" class="text-dark text-xl font-medium hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#" class="text-dark text-xl font-medium hover:text-primary transition-colors">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero py-20 pt-32">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-dark">Digital world of market and <span class="text-primary">short innovative video for digital automation videos</span></h1>
-                <p class="text-lg mb-8 text-gray">We help businesses grow through innovative digital marketing strategies, cutting-edge technology, and data-driven results.</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">Digital world of <span class="text-primary">Marketing</span></h1>
+                <p class="text-lg mb-8 text-white">We help businesses grow through innovative digital marketing strategies, cutting-edge technology, and data-driven results.</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="contact.html" class="btn-primary bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block text-center transition-all">Get Started</a>
                     <a href="services.html" class="btn-secondary bg-white hover:bg-gray-100 text-primary py-3 px-8 rounded-full font-medium inline-block text-center border border-primary transition-all">Our Services</a>
                 </div>
             </div>
             <div class="md:w-1/2">
-                <img src="images/hero.svg" alt="Digital Marketing Illustration" class="w-full h-auto">
+                <img src="./images/hero.svg" alt="Digital Marketing Illustration" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .hero {
+            background-color: #222222;
+        }
+    </style>
+
+    <!-- Services List Section -->
+    <section class="services-list py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="section-header text-center mb-10">
+                <h2 class="text-3xl font-bold mb-4 text-white">Our Services</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Comprehensive digital marketing solutions tailored to your business needs.</p>
+            </div>
+            <div class="service-list-container max-w-4xl mx-auto">
+                <ul class="service-list grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <li class="flex items-center p-3 bg-secondary rounded-lg hover:bg-primary transition-all">
+                        <i class="fas fa-search mr-3 text-white"></i>
+                        <span>SEO Optimization</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-secondary rounded-lg hover:bg-primary transition-all">
+                        <i class="fas fa-bullhorn mr-3 text-white"></i>
+                        <span>Digital Marketing</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-secondary rounded-lg hover:bg-primary transition-all">
+                        <i class="fas fa-robot mr-3 text-white"></i>
+                        <span>AI Agents</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-secondary rounded-lg hover:bg-primary transition-all">
+                        <i class="fas fa-hashtag mr-3 text-white"></i>
+                        <span>Social Media Management</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-secondary rounded-lg hover:bg-primary transition-all">
+                        <i class="fas fa-laptop-code mr-3 text-white"></i>
+                        <span>Website Development</span>
+                    </li>
+                    <li class="flex items-center p-3 bg-secondary rounded-lg hover:bg-primary transition-all">
+                        <i class="fas fa-cogs mr-3 text-white"></i>
+                        <span>Marketing Automation</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -56,7 +163,7 @@
                 <!-- SEO Service -->
                 <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
                     <div class="service-img h-48 bg-indigo-100 flex items-center justify-center">
-                        <img src="images/seo-service.svg" alt="SEO Optimization" class="h-32 w-auto">
+                        <img src="./images/seo-icon.svg" alt="SEO Optimization" class="h-32 w-auto">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 text-dark">SEO Optimization</h3>
@@ -69,7 +176,7 @@
                 <!-- Digital Marketing -->
                 <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
                     <div class="service-img h-48 bg-indigo-100 flex items-center justify-center">
-                        <img src="images/digital-marketing.svg" alt="Digital Marketing" class="h-32 w-auto">
+                        <img src="./images/marketing-icon.svg" alt="Digital Marketing" class="h-32 w-auto">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 text-dark">Digital Marketing</h3>
@@ -82,7 +189,7 @@
                 <!-- Marketing Automation -->
                 <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
                     <div class="service-img h-48 bg-indigo-100 flex items-center justify-center">
-                        <img src="images/marketing-automation.svg" alt="Marketing Automation" class="h-32 w-auto">
+                        <img src="./images/automation-icon.svg" alt="Marketing Automation" class="h-32 w-auto">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 text-dark">Marketing Automation</h3>
@@ -95,7 +202,7 @@
                 <!-- AI Agents -->
                 <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
                     <div class="service-img h-48 bg-indigo-100 flex items-center justify-center">
-                        <img src="images/ai-agent.svg" alt="AI Agents" class="h-32 w-auto">
+                        <img src="./images/ai-icon.svg" alt="AI Agents" class="h-32 w-auto">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 text-dark">AI Agents</h3>
@@ -108,7 +215,7 @@
                 <!-- Website Development -->
                 <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
                     <div class="service-img h-48 bg-indigo-100 flex items-center justify-center">
-                        <img src="images/website-development.svg" alt="Website Development" class="h-32 w-auto">
+                        <img src="./images/website-icon.svg" alt="Website Development" class="h-32 w-auto">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 text-dark">Website Development</h3>
@@ -121,7 +228,7 @@
                 <!-- Social Media Management -->
                 <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all">
                     <div class="service-img h-48 bg-indigo-100 flex items-center justify-center">
-                        <img src="images/social-media.svg" alt="Social Media Management" class="h-32 w-auto">
+                        <img src="./images/social-icon.svg" alt="Social Media Management" class="h-32 w-auto">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 text-dark">Social Media Management</h3>
@@ -140,7 +247,7 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <img src="images/why-us.svg" alt="Why Choose Us" class="w-full h-auto">
+                    <img src="./images/why-us.svg" alt="Why Choose Us" class="w-full h-auto">
                 </div>
                 <div class="md:w-1/2 md:pl-12">
                     <div class="section-header mb-10">
@@ -186,6 +293,27 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Automation Showcase Section -->
+    <section class="automation-showcase py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-dark">Marketing Automation Made Simple</h2>
+                <p class="text-gray max-w-2xl mx-auto">Streamline your digital marketing efforts with our powerful automation solutions.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="automation-image rounded-lg overflow-hidden shadow-lg">
+                    <img src="./images/1.svg" alt="Automation Made Simple" class="w-full h-auto">
+                </div>
+                <div class="automation-image rounded-lg overflow-hidden shadow-lg">
+                    <img src="./images/2.svg" alt="Automation Makes Marketing Easy" class="w-full h-auto">
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html#automation" class="btn-primary bg-primary hover:bg-primary/90 text-white py-3 px-8 rounded-full font-medium inline-block text-center transition-all">Learn More About Automation</a>
             </div>
         </div>
     </section>
@@ -331,15 +459,15 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3 text-secondary"></i>
-                            <span class="text-gray-400">123 Digital Avenue, Tech City</span>
+                            <span class="text-gray-400">chennai</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-phone mt-1 mr-3 text-secondary"></i>
-                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                            <span class="text-gray-400">99999 99999</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1 mr-3 text-secondary"></i>
-                            <span class="text-gray-400">info@digimarkpro.com</span>
+                            <span class="text-gray-400">info@gmail.com</span>
                         </li>
                     </ul>
                 </div>
