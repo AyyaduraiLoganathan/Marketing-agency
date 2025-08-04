@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f0f4ff" />
+  
+  <!-- Browser Window -->
+  <rect x="40" y="40" width="120" height="120" rx="5" fill="white" stroke="#4e42d4" stroke-width="3" />
+  
+  <!-- Browser Header -->
+  <rect x="40" y="40" width="120" height="25" rx="5" fill="#4e42d4" opacity="0.2" />
+  
+  <!-- Browser Controls -->
+  <circle cx="55" cy="52" r="5" fill="#ff6b6b" opacity="0.7" />
+  <circle cx="70" cy="52" r="5" fill="#ffbe0b" opacity="0.7" />
+  <circle cx="85" cy="52" r="5" fill="#3a86ff" opacity="0.7" />
+  
+  <!-- URL Bar -->
+  <rect x="100" y="45" width="50" height="15" rx="3" fill="white" />
+  <text x="105" y="55" font-family="monospace" font-size="8" fill="#4e42d4">https://</text>
+  
+  <!-- Website Layout Elements -->
+  <!-- Header Section -->
+  <rect x="50" y="75" width="100" height="15" rx="2" fill="#4e42d4" opacity="0.1" />
+  
+  <!-- Navigation -->
+  <rect x="55" y="80" width="10" height="5" rx="1" fill="#4e42d4" opacity="0.5" />
+  <rect x="70" y="80" width="10" height="5" rx="1" fill="#4e42d4" opacity="0.5" />
+  <rect x="85" y="80" width="10" height="5" rx="1" fill="#4e42d4" opacity="0.5" />
+  <rect x="100" y="80" width="10" height="5" rx="1" fill="#4e42d4" opacity="0.5" />
+  
+  <!-- Hero Section -->
+  <rect x="50" y="95" width="100" height="25" rx="2" fill="#ff6b6b" opacity="0.1" />
+  <rect x="60" y="100" width="40" height="5" rx="1" fill="#ff6b6b" opacity="0.5" />
+  <rect x="60" y="110" width="30" height="5" rx="1" fill="#ff6b6b" opacity="0.5" />
+  
+  <!-- Content Sections -->
+  <rect x="50" y="125" width="45" height="25" rx="2" fill="#4e42d4" opacity="0.1" />
+  <rect x="105" y="125" width="45" height="25" rx="2" fill="#4e42d4" opacity="0.1" />
+  
+  <!-- Content Elements -->
+  <rect x="55" y="130" width="35" height="3" rx="1" fill="#4e42d4" opacity="0.3" />
+  <rect x="55" y="136" width="25" height="3" rx="1" fill="#4e42d4" opacity="0.3" />
+  <rect x="55" y="142" width="30" height="3" rx="1" fill="#4e42d4" opacity="0.3" />
+  
+  <rect x="110" y="130" width="35" height="3" rx="1" fill="#4e42d4" opacity="0.3" />
+  <rect x="110" y="136" width="25" height="3" rx="1" fill="#4e42d4" opacity="0.3" />
+  <rect x="110" y="142" width="30" height="3" rx="1" fill="#4e42d4" opacity="0.3" />
+  
+  <!-- Code Elements -->
+  <text x="25" y="170" font-family="monospace" font-size="8" fill="#4e42d4">&lt;div&gt;</text>
+  <text x="25" y="180" font-family="monospace" font-size="8" fill="#4e42d4">&lt;/div&gt;</text>
+  
+  <text x="165" y="170" font-family="monospace" font-size="8" fill="#4e42d4">{CSS}</text>
+  <text x="165" y="180" font-family="monospace" font-size="8" fill="#4e42d4">{JS}</text>
+  
+  <!-- Responsive Design Indicators -->
+  <rect x="20" y="100" width="10" height="15" rx="1" fill="#4e42d4" opacity="0.2" />
+  <rect x="20" y="120" width="15" height="20" rx="1" fill="#4e42d4" opacity="0.2" />
+  <rect x="170" y="100" width="20" height="30" rx="1" fill="#4e42d4" opacity="0.2" />
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background -->
+  <rect x="0" y="0" width="64" height="64" rx="12" fill="#4e42d4" />
+  
+  <!-- Letter D -->
+  <path d="M15,15 L25,15 Q35,15 35,25 Q35,35 25,35 L15,35 Z" fill="white" />
+  <path d="M20,20 L25,20 Q30,20 30,25 Q30,30 25,30 L20,30 Z" fill="#4e42d4" />
+  
+  <!-- Letter M -->
+  <path d="M30,30 L35,30 L40,40 L45,30 L50,30 L50,50 L45,50 L45,38 L40,48 L35,38 L35,50 L30,50 Z" fill="white" />
+  
+  <!-- Digital Marketing Element -->
+  <circle cx="48" cy="20" r="8" fill="#ff6b6b" />
+  <path d="M44,20 L47,23 L52,18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

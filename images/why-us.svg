@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background Elements -->
+  <rect x="0" y="0" width="800" height="600" fill="white" />
+  <circle cx="400" cy="300" r="250" fill="#f0f4ff" />
+  
+  <!-- Abstract Shapes -->
+  <path d="M200,150 Q300,50 400,150 T600,250 Q500,350 400,300 T200,150" fill="#4e42d4" opacity="0.1" />
+  <path d="M150,300 Q250,200 350,300 T550,400 Q450,500 350,450 T150,300" fill="#ff6b6b" opacity="0.1" />
+  
+  <!-- Central Element: Trophy/Award -->
+  <path d="M400,150 L450,150 L450,300 L400,320 L350,300 L350,150 L400,150" fill="#4e42d4" opacity="0.2" />
+  <rect x="375" y="320" width="50" height="20" fill="#4e42d4" opacity="0.3" />
+  <rect x="385" y="340" width="30" height="60" fill="#4e42d4" opacity="0.4" />
+  <rect x="350" y="400" width="100" height="10" rx="5" fill="#4e42d4" opacity="0.5" />
+  
+  <!-- Trophy Top -->
+  <path d="M350,150 L450,150 L450,130 C450,120 440,110 430,110 L370,110 C360,110 350,120 350,130 L350,150" fill="#ff6b6b" opacity="0.5" />
+  
+  <!-- Data-Driven Approach Icon -->
+  <circle cx="200" cy="200" r="50" fill="white" stroke="#4e42d4" stroke-width="2" />
+  <rect x="180" y="190" width="10" height="30" fill="#4e42d4" />
+  <rect x="195" y="180" width="10" height="40" fill="#4e42d4" />
+  <rect x="210" y="170" width="10" height="50" fill="#4e42d4" />
+  
+  <!-- Expert Team Icon -->
+  <circle cx="600" cy="200" r="50" fill="white" stroke="#4e42d4" stroke-width="2" />
+  <circle cx="580" cy="190" r="15" fill="#4e42d4" opacity="0.7" />
+  <circle cx="600" cy="190" r="15" fill="#4e42d4" opacity="0.5" />
+  <circle cx="620" cy="190" r="15" fill="#4e42d4" opacity="0.3" />
+  <path d="M565,210 Q580,230 595,210 Q600,230 605,210 Q620,230 635,210 L635,230 L565,230 Z" fill="#4e42d4" opacity="0.5" />
+  
+  <!-- Innovative Solutions Icon -->
+  <circle cx="200" cy="400" r="50" fill="white" stroke="#4e42d4" stroke-width="2" />
+  <path d="M200,380 L210,390 L200,400 L210,410 L200,420 L190,410 L200,400 L190,390 Z" fill="#ff6b6b" />
+  <circle cx="200" cy="400" r="10" fill="#4e42d4" />
+  
+  <!-- Personalized Service Icon -->
+  <circle cx="600" cy="400" r="50" fill="white" stroke="#4e42d4" stroke-width="2" />
+  <path d="M600,380 Q580,380 580,400 Q580,420 600,420 Q620,420 620,400 Q620,380 600,380" fill="none" stroke="#4e42d4" stroke-width="2" />
+  <circle cx="590" cy="390" r="3" fill="#4e42d4" />
+  <circle cx="610" cy="390" r="3" fill="#4e42d4" />
+  <path d="M590,405 Q600,415 610,405" fill="none" stroke="#4e42d4" stroke-width="2" />
+  
+  <!-- Connecting Lines -->
+  <line x1="250" y1="200" x2="350" y2="200" stroke="#4e42d4" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="550" y1="200" x2="450" y2="200" stroke="#4e42d4" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="250" y1="400" x2="350" y2="400" stroke="#4e42d4" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="550" y1="400" x2="450" y2="400" stroke="#4e42d4" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Stars/Sparkles -->
+  <path d="M150,150 L160,160 L150,170 L140,160 Z" fill="#ff6b6b" />
+  <path d="M650,150 L660,160 L650,170 L640,160 Z" fill="#ff6b6b" />
+  <path d="M150,450 L160,460 L150,470 L140,460 Z" fill="#ff6b6b" />
+  <path d="M650,450 L660,460 L650,470 L640,460 Z" fill="#ff6b6b" />
+</svg>
